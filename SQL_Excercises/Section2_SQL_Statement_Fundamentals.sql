@@ -1,5 +1,5 @@
 -- ---------------------------------------------------------
---			SECTION 2: SQL STATEMENT FUNDAMENTALS 
+-- SECTION 2: SQL STATEMENT FUNDAMENTALS 
 -- ---------------------------------------------------------
 
 -- Situation: We want to send out a promotional email to our existing customers. 
@@ -439,5 +439,5 @@ from film
 WHERE title LIKE '%Truman%';
 
 -- ---------------------------------------------------------
---		END OF SECTION 2: SQL STATEMENT FUNDAMENTALS 
+-- END OF SECTION 2: SQL STATEMENT FUNDAMENTALS 
 -- ---------------------------------------------------------

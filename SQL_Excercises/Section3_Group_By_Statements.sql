@@ -1,5 +1,5 @@
 -- ---------------------------------------------------------
---		SECTION 3: GROUP BY STATEMENTS
+-- SECTION 3: GROUP BY STATEMENTS
 -- ---------------------------------------------------------
 
 -- Overview 
@@ -328,5 +328,5 @@ HAVING SUM(amount) >= 100 ;
 
 
 -- ---------------------------------------------------------
---		END OF SECTION 3: GROUP BY STATEMENTS
+-- END OF SECTION 3: GROUP BY STATEMENTS
 -- ---------------------------------------------------------
