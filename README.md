@@ -58,8 +58,28 @@ brew services start postgresql@15
 ```
 --- 
 
+## Learning Goals
+- Develop fluency in writing SQL queries for data analysis
+- Build confidence in navigating relational database systems
+- Prepare for roles involving data analytics, BI, and database querying
+- Strengthen understanding of SQL for integration with Python and other tools
+
+---
+
+## Notes and Approach
+- All exercises are written in PostgreSQL dialect (some minor differences exist in MySQL, SQLite, etc.)
+- Queries are tested locally using both pgAdmin and the psql CLI
+- This repository will continue to be updated as I progress through the course and apply SQL to personal projects
+
 ## Repository Structure
 
+```text
 ├── README.md                   # Course overview and documentation
 ├── SQL_Exercises               # Section-by-section practice queries
-└── SQL_information             # Further Information
+└── SQL_information             # Further information
+``` 
+
+## References
+- The Complete SQL Bootcamp (Udemy)
+- PostgreSQL Documentation
+- pgAdmin Documentation
