@@ -2,14 +2,14 @@
 -- SECTION 5: Joins
 -- ---------------------------------------------------------
 
--- OVERVIEW OF JOIN
+-- Overview of JOINS
 
 -- Links for more information:
 -- https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
 -- https://www.talend.com/
 -- https://en.wikipedia.org/wiki/Join_(SQL)
 
------- INTRODUCTION TO JOINS ------ 
+------ Introduction to JOINS ------ 
 
 -- Joins will allow to combine information from multiple tables.
 
@@ -38,18 +38,18 @@ SELECT customer_id, SUM(amount) AS total_spent
 from payment
 GROUP BY customer_id;
 
--- This is the same as the previous example, but we are using an alias.
+-- better
 
 SELECT customer_id, SUM(amount) AS total_spent
 from payment
 GROUP BY customer_id
-HAVING SUM(amount) > 100; -- Alias can't be used here to filter by
+HAVING SUM(amount) >100; -- Alias can't be used here to filter by
 
 SELECT customer_id, amount
 from payment
-WHERE amount > 2;
+WHERE amount >2;
 
------- INNER JOINS ------ 
+------ Inner JOINS ------ 
 -- Innerjoin will result with the set of records that match in both tables. 
 
 SELECT *
@@ -66,7 +66,7 @@ FROM 	payment
 INNER JOIN customer
 ON payment.customer_id = customer.customer_id;
 
------- FULL OUTER JOIN ------ 
+------ Full Outer Joins ------ 
 
 -- There are a few different types of OUTER JOINS 
 -- They will allow us to specify how to deal with values only present in one of the tables being joined. 
@@ -99,7 +99,7 @@ FROM payment;
 SELECT COUNT(DISTINCT customer_id) 
 FROM customer;
 
------- LEFT OUTER JOIN ------ 
+------ Left Outer Joins ------ 
 
 -- A LEFT OUTER JOIN results in the set of records. that are in the left table, if there is no match with the right table. 
 -- The resuls are null. Later we will learn how to add WHERE statements to futher modify a LEFT OUTER JOIN
@@ -210,7 +210,7 @@ WHERE first_name= 'Nick' AND last_name = 'Wahlberg';
 -- "Rushmore Mermaid"		"Nick"	"Wahlberg"
 -- "Smile Earring"			"Nick"	"Wahlberg"
 -- "Wardrobe Phantom"		"Nick"	"Wahlberg"
- 
+
 -- ---------------------------------------------------------
 -- END OF SECTION 5: Joins
 -- ---------------------------------------------------------
